@@ -1,0 +1,205 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://scenes/GreenShip.tscn" type="PackedScene" id=1]
+[ext_resource path="res://scenes/ankelmasak.png" type="Texture" id=2]
+[ext_resource path="res://scenes/METEOR !!!.tscn" type="PackedScene" id=3]
+[ext_resource path="res://assets/Screenshot 2024-02-20 222541.png" type="Texture" id=4]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 12.9989, 683 )
+
+[node name="Node" type="Node"]
+
+[node name="Sprite" type="Sprite" parent="."]
+modulate = Color( 1, 1, 1, 0.0784314 )
+position = Vector2( 684, 383.5 )
+scale = Vector2( 4.2625, 2.39687 )
+texture = ExtResource( 2 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Border" type="StaticBody2D" parent="."]
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Border"]
+position = Vector2( -13, 657 )
+shape = SubResource( 1 )
+
+[node name="Border2" type="StaticBody2D" parent="."]
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Border2"]
+position = Vector2( 683, -12.9996 )
+rotation = 1.57079
+shape = SubResource( 1 )
+
+[node name="Border3" type="StaticBody2D" parent="."]
+rotation = -3.14159
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Border3"]
+position = Vector2( -1379, -110.994 )
+shape = SubResource( 1 )
+
+[node name="Border4" type="StaticBody2D" parent="."]
+rotation = -3.14159
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Border4"]
+position = Vector2( -683.004, -780.997 )
+rotation = 1.57079
+shape = SubResource( 1 )
+
+[node name="Green SHIP !!" parent="." instance=ExtResource( 1 )]
+position = Vector2( 58, 723 )
+
+[node name="StaticBody2D" parent="." instance=ExtResource( 3 )]
+position = Vector2( 20, 25 )
+rotation = -0.523598
+scale = Vector2( 5.39114, -1.88584 )
+
+[node name="StaticBody2D2" parent="." instance=ExtResource( 3 )]
+position = Vector2( 90, 171 )
+rotation = 1.57079
+scale = Vector2( 1.34124, 2.32168 )
+
+[node name="StaticBody2D3" parent="." instance=ExtResource( 3 )]
+position = Vector2( 294, 579 )
+rotation = -1.83259
+scale = Vector2( 0.809557, -0.779458 )
+
+[node name="StaticBody2D4" parent="." instance=ExtResource( 3 )]
+position = Vector2( 1185, 193 )
+scale = Vector2( 1.64, 1.76 )
+
+[node name="StaticBody2D5" parent="." instance=ExtResource( 3 )]
+position = Vector2( 1263, 8 )
+scale = Vector2( -3.36758, 2.43805 )
+
+[node name="StaticBody2D6" parent="." instance=ExtResource( 3 )]
+position = Vector2( 174, 780 )
+rotation = 1.57079
+scale = Vector2( 1.12983, 1.06679 )
+
+[node name="StaticBody2D7" parent="." instance=ExtResource( 3 )]
+position = Vector2( 433, -29 )
+rotation = 1.57079
+
+[node name="StaticBody2D8" parent="." instance=ExtResource( 3 )]
+position = Vector2( 1010, 51 )
+rotation = 1.309
+
+[node name="StaticBody2D9" parent="." instance=ExtResource( 3 )]
+position = Vector2( 328, 745 )
+rotation = 1.57079
+scale = Vector2( 1.24865, 1.24 )
+
+[node name="StaticBody2D10" parent="." instance=ExtResource( 3 )]
+position = Vector2( 565, 42 )
+rotation = 2.35619
+
+[node name="StaticBody2D11" parent="." instance=ExtResource( 3 )]
+position = Vector2( 867, 4 )
+rotation = 0.785397
+scale = Vector2( 0.738292, 1.34548 )
+
+[node name="StaticBody2D12" parent="." instance=ExtResource( 3 )]
+position = Vector2( 281, 103 )
+rotation = -2.61799
+
+[node name="StaticBody2D13" parent="." instance=ExtResource( 3 )]
+position = Vector2( 447, 174 )
+
+[node name="StaticBody2D14" parent="." instance=ExtResource( 3 )]
+position = Vector2( 428, 622 )
+
+[node name="StaticBody2D15" parent="." instance=ExtResource( 3 )]
+position = Vector2( 744, 149 )
+scale = Vector2( 0.705048, 0.784806 )
+
+[node name="StaticBody2D16" parent="." instance=ExtResource( 3 )]
+position = Vector2( 503, 769 )
+
+[node name="StaticBody2D17" parent="." instance=ExtResource( 3 )]
+position = Vector2( 917, 175 )
+rotation = 1.309
+
+[node name="StaticBody2D20" parent="." instance=ExtResource( 3 )]
+position = Vector2( 828, 283 )
+rotation = 1.309
+
+[node name="StaticBody2D21" parent="." instance=ExtResource( 3 )]
+position = Vector2( 748, 3 )
+scale = Vector2( 0.58661, 0.878318 )
+
+[node name="StaticBody2D18" parent="." instance=ExtResource( 3 )]
+position = Vector2( 620, 698 )
+
+[node name="StaticBody2D19" parent="." instance=ExtResource( 3 )]
+position = Vector2( 702, 769 )
+
+[node name="StaticBody2D22" parent="." instance=ExtResource( 3 )]
+position = Vector2( 1049, 190 )
+rotation = -0.261799
+
+[node name="StaticBody2D23" parent="." instance=ExtResource( 3 )]
+position = Vector2( 640, 591 )
+
+[node name="StaticBody2D24" parent="." instance=ExtResource( 3 )]
+position = Vector2( 941, 346 )
+
+[node name="StaticBody2D" parent="StaticBody2D24" instance=ExtResource( 3 )]
+position = Vector2( -203, 308 )
+rotation = -0.785397
+
+[node name="StaticBody2D2" parent="StaticBody2D24" instance=ExtResource( 3 )]
+position = Vector2( -119, 381 )
+rotation = -0.785397
+
+[node name="StaticBody2D3" parent="StaticBody2D24" instance=ExtResource( 3 )]
+position = Vector2( 128, -8 )
+rotation = 2.35619
+
+[node name="Label" type="Label" parent="."]
+anchor_left = 0.201
+anchor_top = 0.274
+anchor_right = 0.201
+anchor_bottom = 0.274
+margin_left = 690.434
+margin_top = 264.568
+margin_right = 774.434
+margin_bottom = 278.568
+rect_scale = Vector2( 5.25522, 4.41385 )
+text = "INI FINISH !!!"
+
+[node name="Label2" type="Label" parent="."]
+margin_left = 1214.0
+margin_top = 535.0
+margin_right = 1241.0
+margin_bottom = 549.0
+rect_rotation = 89.9999
+text = "--->"
+
+[node name="ObjectiveArea" type="Area2D" parent="."]
+
+[node name="Screenshot2024-02-20222541" type="Sprite" parent="ObjectiveArea"]
+modulate = Color( 0.956863, 0.752941, 0.211765, 1 )
+position = Vector2( 1171, 722 )
+scale = Vector2( 0.596986, 0.265411 )
+texture = ExtResource( 4 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="ObjectiveArea"]
+position = Vector2( 1171.5, 722.25 )
+scale = Vector2( 0.59602, 0.264555 )
+polygon = PoolVector2Array( 323.5, 182.5, -323.5, 182.5, -323.5, -182.5, 323.5, -182.5 )
+
+[connection signal="body_entered" from="ObjectiveArea" to="Green SHIP !!" method="_on_ObjectiveArea_body_entered"]

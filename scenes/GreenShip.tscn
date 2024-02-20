@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://scenes/GreenShip.gd" type="Script" id=1]
+[ext_resource path="res://assets/playerShip1_green.png" type="Texture" id=2]
+
+[node name="Green SHIP !!" type="RigidBody2D"]
+script = ExtResource( 1 )
+
+[node name="Sprite" type="Sprite" parent="."]
+texture = ExtResource( 2 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PoolVector2Array( -8, -37, 8, -37, 11, -12, 36, 2, 41, 0, 44, -5, 49, -5, 47, 24, 43, 24, 41, 21, 36, 23, 14, 27, 8, 37, -8, 37, -14, 28, -37, 23, -41, 21, -42, 24, -47, 24, -49, -5, -45, -5, -41, 0, -36, 2, -12, -11 )
